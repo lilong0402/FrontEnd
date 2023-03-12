@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+<!-- 使用属性绑定和条件渲染，对按钮实现禁用/启用的效果 -->
+    <!-- <div id="app">
+        <h1>{{ product }}</h1>
+        <span>{{product}}</span>
+        <div class="product-image">
+            <img v-bind:src="image">
+        </div>
+          <a : href="url"></a> 
+          <p v-if="inStock">In Stock</p>
+          <p v-else="Stock">Out Stock</p>
+          
+          <button :disabled="button<10">按钮</button>
+
+    </div>
+-->
+
+<div id="app">
+    <ul  style="list-style: none;">
+    
+        
+        <li v-for="count in counts" :key="count.id" style="float: left;">
+            <div style="width: 200px; height: 245px; margin-right: 20px;">
+
+                <img :src="count.image" style="height: 150px;">
+                <p style="line-height: 5px;">&nbsp;&nbsp;{{count.courtName}}</p>
+                <p style="line-height: 5px;">&nbsp;&nbsp;班课号:{{count.classId}}</p>
+                <p style="line-height: 5px;">&nbsp;&nbsp;{{count.className}}</p>
+                <p style="line-height: 5px; color: gray;">&nbsp;&nbsp;{{count.Time}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" style="color: blue;">进入</a>
+                </p>
+                </div>
+            
+        </li>
+    </ul>
+</div>
+    <script src="./main.js"></script>
+    <!-- Mount App 挂载app -->
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+
+</html>

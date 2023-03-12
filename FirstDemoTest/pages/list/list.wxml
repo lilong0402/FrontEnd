@@ -1,0 +1,36 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+  <view class="imgView">
+     <!-- <image src="./static/springboot.jpg"></image>
+     <image src="./static/vue.jpg"></image>
+     <image src="./static/web.jpg"></image> -->
+     <!-- <view class="listimg"> -->
+        <view wx:for="{{courses}}">
+        <view class="listimg">
+            <!-- <image src="course.courseCover"></image> -->
+            <!-- {{index}}: {{item:courseId}}; -->
+            <!-- {{index}} : {{item.courseCover}} -->
+            <view>
+              <image class="img" src="{{item.courseCover}}"></image>
+            </view>
+            <view>
+            <text class="imgtext" style="width: 150px;">{{item.courseName}}</text>
+            <text class="teachername">
+            {{item.courseTeacher.name}}<text style="color: darkgrey; padding-left: 10px;">{{item.courseClass}}</text>
+            </text>
+            <view style="font-size: 10px;" class="tandv"><image class="img2" src="{{item.iconfont.qd}}"></image>
+            <text class="text2">签到</text>
+            <image class="img2" style="padding-left: 10px;" src="{{item.iconfont.js}}"></image>
+            <text class="text2" style="padding-right: 20px;">举手</text>
+            <image class="img2" src="{{item.iconfont.qiangda}}"></image>
+            <text class="text2">抢答</text>
+            </view>
+            <!-- {{item.iconfont.qd}} -->
+        </view>
+     </view>
+     <view class="line"></view>
+    </view>
+    </view>
+  </view>
+<!-- </view> -->
+

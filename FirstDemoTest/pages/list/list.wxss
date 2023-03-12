@@ -1,0 +1,62 @@
+/* pages/list/list.wxss */
+.img{
+  width: 100px; 
+  height: 100px;
+  margin-bottom: 20px;
+  position: relative;
+  top: -60px;
+  left: -10px;
+}
+.imgView {
+  display: flex;
+  flex-flow: column;
+}
+.imgone{
+   display: flex;
+}
+.imgtext{
+  position: relative;
+  top: -60px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.teachername{
+  position: relative;
+  top: -50px;
+  /* left: -0px; */
+  font-size: 10px;
+}
+.img2 {
+  width: 20px;
+  height: 20px;
+  /* position: relative;
+  padding-top: 10px;
+  left: -200px; */
+} 
+.listimg{
+  display: flex;
+  justify-content: left;
+  position: relative;
+  left: -40px;
+}
+/* .container {
+  margin-left: auto ;
+  margin-right: auto;
+} */
+.tandv{
+  position: relative;
+  top: -35px;
+}
+.text2{
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: -4px;
+}
+.line{
+  width: auto;
+  margin-top: 20rpx;
+  border-top:1px #989898 solid;
+  position: relative;
+  top: -80px;
+  }
